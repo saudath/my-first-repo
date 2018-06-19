@@ -9,6 +9,7 @@ function loginForm()
     {
         localStorage.setItem('Active user',id);
         window.location.href = "form.html";
+        
     	/*document.getElementById("d").style.display="inline";
     	document.getElementById("firstname").innerHTML=pass.firstname;
     	document.getElementById("lastname").innerHTML=pass.lastname;

@@ -16,9 +16,9 @@ padding:25px;
 width:100%;
 border-radius:0 20px;
 }
-.bg{background-image:url('photos/15.jpeg');
-background-size:cover;
-background-position:center;
+.bg{background-color:black;
+/*background-size:cover;
+background-position:center;*/
 height:100%;
 margin:auto;
 margin-top:20px;
