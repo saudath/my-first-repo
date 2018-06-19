@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>register form1
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width;initial-scale:1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type = "text/css" href="aa2.css" />
+    <script src="register.js">
+
+    </script>
+
+</head>
+<body onload="document.registration.firstname.focus();">
+    <div class="header">
+        <h2 style="font-family:'Times New Roman';text-align:center;font-size:50px;text-shadow:2px 2px 5px #f1f1f1;color:black">Register now</h2>
+    </div>
+
+    <ul>
+       <li><a class="active" href="#home">Home</a></li>
+       <li><a href="#news">News</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <li><a href="#about">About</a></li>
+    </ul>
+    <div class="bg">
+
+      <div class="container" >
+         <div id="example1">
+            <form name="registration" onSubmit="return formValidation();">
+                <div class="row">
+                    <div class="col25">
+                        <label for="firstname" name="firstname" >First Name:</label></div>
+                    <div class="col75">
+                        <input type="text" name="firstname" placeholder="Firstname"  required></div>
+                    </div>
+                <div class="row">
+                    <div class="col25">
+                       <label for="lastname" name="lastname">Last Name:</label></div>
+                    <div class="col75">
+                       <input type="text" name="lastname" placeholder="Lastname"></div>
+                </div>
+                <div class="row">
+                    <div class="col25">
+                        <label for="username" name="username">Username:</label></div>
+                    <div class="col75">
+                        <input type="text" name="username" placeholder="Username" title="six or more characters required" required></div>
+                    </div>
+                <div class="row">
+                    <div class="col25">
+                        <label for="password" name="password">Password</label></div>
+                    <div class="col75">
+                        <input type="password" name="password" placeholder="password" title="six or more characters required" required></div>
+                    </div>
+                <div class="row">
+				    <div class="col25">
+				        <label for="email" name="email" >email:</label></div>
+				    <div class="col75">
+				        <input type="email" name="email" placeholder="username@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></div>
+				</div>
+				<div class="row">
+				    <div class="col25">
+				        <label for="dob" name="dob" >DOB:</label></div>
+				    <div class="col75">
+				        <input type="date" name="dob"required ></div>
+				</div>
+				<div class="row">
+				    <div class="col25">
+				        <label for="country" name="country"required >Country:</label></div>
+				    <div class="col75">
+						<select id="country" name="country">
+							<option selected="" value="Default"></option>
+							<option value=india>India</option>
+							<option value=USA>USA</option>
+							<option value=Japan>Japan</option>
+							<option value=China>China</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col25">
+						<label for="phone" name="phone" >Telephone:</label></div>
+					<div class="col75">
+						<input type="tel" name="phone" required></div>
+					</div>
+                <div class="row">
+                    <div class="col25">
+                        <label for="photo" name="photo" >Upload image:</label>
+                    </div>
+                    <div class="col75">
+                        <input type="file" id="photo" onchange="readURL(this);" required>
+                        <img src="" id="bannerImg" >
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col25">
+						<label for="details" name="details" >Details:</label></div>
+					<div class="col75">
+						<textarea rows="8" name="details">
+							Enter your details here...</textarea>
+					</div>
+				<div class="row">
+					<div class="col25"><br></div>
+					<div class="col75"><input type="checkbox" name="iagree" required><span style="color:white">I agree</span></div>
+				</div>
+				<div class="row">
+					<input type="submit" value="submit" style="margin-left:320px;box-shadow: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				</div>
+        </form>
+    </div>
+
+</div><br><br><br>
+<a href="https://www.w3schools.com/css" ><i class="fa fa-bars"></i></a>
+</body>
+</html>

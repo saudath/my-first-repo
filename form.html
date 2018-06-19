@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<style>
+img{width:200px;}
+	#formfill{}
+	</style>
+	
+
+	<!--var id=document.getElementById("userid").value;
+    var password=document.getElementById("passwrd").value;
+    var pass = JSON.parse(localStorage.getItem(id));
+    //var ph=JSON.stringify(pass.photo);-->
+	<script src="form.js">
+    
+	</script>
+</head>
+<body onload="return FormDetails()">
+	<div id="formfill">
+		<h1> Your Details:</h1>
+		<label>First Name:</label>
+		<p id="firstname"></p>
+		<label>First Name:</label>
+		<p id="lastname"></p>
+		<label>First Name:</label>
+		<p id="username"></p>
+		<label>First Name:</label>
+		<p id="email"></p>
+		<label>First Name:</label>
+		<p id="dob"></p>
+		<label>First Name:</label>
+		<p id="country"></p>
+		<label>First Name:</label>
+		<p id="phone"></p>
+		<label>First Name:</label>
+		<p id="details"></p>
+		<div class="i" >
+				<img id="photo" src="8.png"></img>
+			</div>
+			<button onclick="this.innerHTML=Date()">The time is?</button>
+			<input type="submit" id="logout" value="Log Out" onclick="terminate()"/>
+	</div>
+</body>

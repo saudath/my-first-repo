@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width;initial-scale=1.0;">
+	<style>
+		*{box-sizing:border-box;}
+
+		@media only screen and (max-width: 600px) {
+  	    	body 
+  	    	{
+        	background-color: lightblue;
+    		}
+		}
+		#container{
+/*margin-top:30px;*/
+z-index:-1;
+			display: block;
+			width:25%;
+			height:600px;
+			background-color:#f1f1f1;
+			margin:5% auto 5% auto;}
+		.a{height:15%;
+			width:100%;
+			background-color:rgb(59,89,152);
+			text-align:center;
+			color:white;
+			font-size:40px;
+			padding-top:15px;
+			font-weight:bold;
+			font-family:"klavika bold";
+			letter-spacing:-1px;}
+		.b{margin:0;
+			padding:.2% 0 .2% 0;
+			background-color:#f5f5dc;
+			width:100%;
+			height:10%;
+			line-height:1.2;
+			text-align:center;
+			border-bottom:1px solid #deb887;}
+		.c{
+			margin:5%;
+			padding:5px;
+			background-color:#f5f5dc;
+			border-radius:5px;
+			border:1px solid #deb887;}
+		.sd
+		{
+			float:left;
+			width:5%;
+			height:10%;
+			object-fit:cover;
+		}
+		.c p{
+			text-align:center;
+		}
+		input[type=text],input[type=password]{
+			font-size:16px;
+			height:7%;
+			width:90%;
+			padding:2px;
+			background-color:white;
+			border:1px solid #f1f1f1;
+			box-shadow:2px 2px 2px gray;}
+		.d{
+			margin:5% 5% 0 5%;
+			border-radius:5px 5px 0 0;}
+
+		.e{
+			margin:0 5% 5% 5%;
+			border-radius:0 0 5px 5px;
+		}
+		input[type=submit]{
+			font-size:16px;
+			height:7%;
+			width:90%;
+			padding:2px;
+			background-color:rgb(59,89,152);
+			/*border:1px solid #f1f1f1;*/
+			box-shadow:2px 2px 2px gray;
+			margin:5%;
+			border-radius:5px;
+			color:white;
+			font-weight:bold;
+			font-family:arial;}
+		.f{
+			width:90%;
+			padding:2px;
+			margin:10px;}
+			#d{
+				position:absolute;
+				display: none;
+				/*z-index:1;*/
+				background-color:aliceblue;
+				width: 60%;
+			}
+			#g{
+				
+			display:none;
+			}
+			#d label{
+				size:50;
+				color:blue;
+				clear:none;
+
+			}
+			#i{
+				display:none;
+			}
+			#photo
+			{
+				height:200px;
+				width:200px;
+				float:right;
+				
+
+			}
+	</style>
+	<script src="login.js"> </script>
+</head>
+
+<body>
+	<div id="container">
+		<header class="a">QB</header>
+		<div class="b"><P style="">Log in to use your QB account with<br>
+			<span style="color:rgb(59,89,152)">iPhone.</span></p></div>
+		<div class="c">
+			<img class="sd" src="photos/ph.jpeg" >
+			<p style="color:rgb(59,89,152)">Get QB for iPhone and browse faster.</p></div>
+			
+		<input class="d" id="userid" type="text" placeholder="Email or phone" name="email"/>
+
+		<input  class="e" id="passwrd" type="password" placeholder="Password" name="email"/>
+		<input type="submit" id="submit" value="Log In" onclick="loginForm()"/>
+	
+		<div class="f"><a href="#" style="color:rgb(59,89,152);text-decoration:none;">Forgot password?</a></p>
+			<p>Trouble logging in? <a href="#" style="color:rgb(59,89,152);text-decoration:none;">Try the alternative login.</a></p>
+		</div>
+		<div id="g">
+		<p id="hello" style="color:red">Incorrect password or username</p> </div></div>
+		<div id="d" >
+			<h1>Your details are:</h1>
+			<label>First Name:</label>
+			<p id="firstname"></p>
+			<label>Last Name</label>
+			<p id="lastname"></p>
+			<label>User Name:</label>
+			<p id="username"></p>
+			<label>Email:</label>
+			<p id="email"></p>
+			<label>Date of Birth:</label>
+			<p id="dob"></p>
+			<label>Country:</label>
+			<p id="country"></p>
+			<label>Phone:</label>
+			<p id="phone"></p>
+			<label>Details:</label>
+			<p id="details"></p>
+			<div class="i" >
+				<img id="photo" src="8.png"></img>
+			</div>
+		</div>
+		
+				
+			
+</body>
+</html>
